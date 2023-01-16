@@ -1,0 +1,16 @@
+@import "../styles/global.scss";
+
+.nav {
+  font-family: "Inter", sans-serif;
+  font-size: 9vw;
+  font-weight: 900;
+  -webkit-text-stroke: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100px;
+
+  a {
+    @include link-style();
+  }
+}

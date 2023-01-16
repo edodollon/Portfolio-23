@@ -1,0 +1,19 @@
+@import "../styles/global.scss";
+
+.logo {
+  @include link-style();
+  display: flex;
+  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  position: absolute;
+  bottom: calc(7.5vh + 15rem);
+  left: 100px;
+  z-index: 1;
+
+  .firstName,
+  .lastName {
+    font-size: 40px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px;
+  }
+}
