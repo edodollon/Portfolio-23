@@ -2,13 +2,15 @@
 
 .nav {
   font-family: "Inter", sans-serif;
-  font-size: 9vw;
+  // font-size: 9vw;
+  font-size: 57px;
   font-weight: 900;
   -webkit-text-stroke: 4px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  right: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // right: 100px;
 
   a {
     @include link-style();
