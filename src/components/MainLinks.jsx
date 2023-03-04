@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/mainLinks.scss";
 
 export default function MainLinks() {
@@ -7,7 +8,7 @@ export default function MainLinks() {
         <a href="">WORKS</a>
       </div>
       <div>
-        <a href="">ABOUT</a>
+        <Link to={`About`}>ABOUT</Link>
       </div>
       <div>
         <a href="">CONTACT</a>
