@@ -2,7 +2,10 @@
 
 .landing-info {
   font-family: "Inter", sans-serif;
+  height: 100vh;
   padding: 10% 10% 0;
+  position: fixed;
+  z-index: -1;
 }
 
 .logo {

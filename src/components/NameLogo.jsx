@@ -1,4 +1,5 @@
 import "../styles/nameLogo.scss";
+import MainLinks from "./MainLinks";
 
 export default function NameLogo() {
   return (
@@ -11,6 +12,7 @@ export default function NameLogo() {
         2023 Portfolio of an aspiring web developer based in Vancouver
       </p>
       <p>Currently learning: Nextjs</p>
+      <MainLinks />
     </div>
   );
 }

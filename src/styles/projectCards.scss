@@ -1,0 +1,12 @@
+// makes initial landing page visible, probably not the best solution but it works for now
+#section-gap {
+  height: 100vh;
+}
+
+.project-card {
+  background-color: burlywood;
+  border: 1px solid black;
+  height: 18rem;
+  margin: 0 auto 7rem;
+  width: 18rem;
+}
