@@ -4,22 +4,43 @@ import { InView } from "react-intersection-observer";
 import "../styles/projectCards.scss";
 
 export default function ProjectsGrid() {
-  const { ref, inView, entry } = useInView();
+  const { ref: firstRef, inView: fInView, entry: fEntry } = useInView();
+  const {
+    ref: secondRef,
+    inView: sInView,
+    entry: sEentry,
+  } = useInView({ threshold: 1 });
+  const { ref: thirdRef, inView: tInView, entry: tEentry } = useInView();
 
   return (
     <>
       <div id="section-gap"></div>
       <section className="section-portfolio">
-        <div id="first-card" className="project-card">
-          Image
-        </div>
-        <div ref={ref} className="project-card">
-          Image
-        </div>
         <InView>
-          <div ref={ref} className="project-card">
-            Image
-            {inView ? "IN VIEW" : "NONONO"}
+          <div ref={firstRef} className="project-card">
+            {fInView ? "IN VIEW" : "NONONO"}
+            <section className="card-info">
+              <p>The Pokemon Library</p>
+              <p>Status: Completed</p>
+            </section>
+          </div>
+        </InView>
+        <InView>
+          <div ref={secondRef} className="project-card">
+            {sInView ? "IN VIEW" : "NONONO"}
+            <section className="card-info">
+              <p>StoreMe</p>
+              <p>Status: Completed</p>
+            </section>
+          </div>
+        </InView>
+        <InView>
+          <div ref={thirdRef} className="project-card">
+            {tInView ? "IN VIEW" : "NONONO"}
+            <section className="card-info">
+              <p>Portfolio 2023</p>
+              <p>Status: In Progess</p>
+            </section>
           </div>
         </InView>
       </section>
