@@ -1,6 +1,18 @@
 // makes initial landing page visible, probably not the best solution but it works for now
 #section-gap {
   height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+.section-portfolio {
+  position: relative;
+  z-index: 2;
+}
+
+// temporary
+.show {
+  background-color: red;
 }
 
 .project-card {

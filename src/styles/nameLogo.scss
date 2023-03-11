@@ -2,10 +2,23 @@
 
 .landing-info {
   font-family: "Inter", sans-serif;
-  height: 100vh;
   padding: 10% 10% 0;
   position: fixed;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+
+  .landing-left-section {
+    @media only screen and (min-width: 1024px) {
+      // padding-top: 45%;
+      // transform: translateY(-30%);
+      position: absolute;
+      top: 45%;
+      width: 30%;
+    }
+  }
 }
 
 .logo {
@@ -13,17 +26,17 @@
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  // position: absolute;
-  // bottom: calc(7.5vh + 15rem);
-  // left: 100px;
   z-index: 1;
 
   .firstName,
   .lastName {
-    // font-size: 40px;
     font-size: 18px;
     font-weight: 800;
     -webkit-text-stroke: 1px;
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 24px;
+    }
   }
 }
 

@@ -5,7 +5,7 @@ export default function MainLinks() {
   return (
     <div className="nav">
       <div>
-        <a href="">PROJECTS</a>
+        <a href="#first-card">PROJECTS</a>
       </div>
       <div className="link-div">
         <Link to={`About`}>ABOUT</Link>

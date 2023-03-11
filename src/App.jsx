@@ -9,13 +9,15 @@ function App() {
   //   entries.forEach((entry) => {
   //     if (entry.isIntersecting) {
   //       entry.target.classList.add("show");
+  //       console.log("IS SHOWING");
   //     } else {
   //       // this is to show multiple times if you want.. removes the class if it is NOT intersecting
   //       entry.target.classList.remove("show");
+  //       console.log("IS NOT SHOWING");
   //     }
   //   });
   // });
-  // const test = document.querySelectorAll(".link-div");
+  // const test = document.querySelectorAll(".project-card");
   // // Tells what to observe
   // test.forEach((el) => observer.observe(el));
 
