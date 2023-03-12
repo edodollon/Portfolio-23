@@ -7,11 +7,11 @@ export default function PokemonPage() {
         <img src="" alt="" />
       </section>
       <section className="project-info-wrapper">
-        <div className="project-info-header">
-          <p>Personal project</p>
-          <p>2022</p>
-        </div>
         <div className="project-content-wrapper">
+          <div className="project-info-header">
+            <p>Personal project</p>
+            <p>2022</p>
+          </div>
           <h1 className="project-heading">Project Heading</h1>
           <div className="project-description-wrapper">
             <p>

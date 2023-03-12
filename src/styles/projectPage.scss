@@ -1,0 +1,18 @@
+// main project styling
+.project-info-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.project-content-wrapper {
+  padding: 1rem;
+
+  .project-heading {
+    font-size: 28px;
+  }
+
+  .project-description-wrapper {
+    font-size: 20px;
+  }
+}
