@@ -17,8 +17,11 @@ export default function ProjectsGrid() {
       <div id="section-gap"></div>
       <section className="section-portfolio">
         <InView>
-          <div ref={firstRef} className="project-card">
-            {fInView ? "IN VIEW" : "NONONO"}
+          <div
+            ref={firstRef}
+            className={`project-card ${fInView && "show"}`}
+            id="first-card"
+          >
             <section className="card-info">
               <p>The Pokemon Library</p>
               <p>Status: Completed</p>
@@ -26,8 +29,7 @@ export default function ProjectsGrid() {
           </div>
         </InView>
         <InView>
-          <div ref={secondRef} className="project-card">
-            {sInView ? "IN VIEW" : "NONONO"}
+          <div ref={secondRef} className={`project-card ${sInView && "show"}`}>
             <section className="card-info">
               <p>StoreMe</p>
               <p>Status: Completed</p>
@@ -35,8 +37,7 @@ export default function ProjectsGrid() {
           </div>
         </InView>
         <InView>
-          <div ref={thirdRef} className="project-card">
-            {tInView ? "IN VIEW" : "NONONO"}
+          <div ref={thirdRef} className={`project-card ${tInView && "show"}`}>
             <section className="card-info">
               <p>Portfolio 2023</p>
               <p>Status: In Progess</p>

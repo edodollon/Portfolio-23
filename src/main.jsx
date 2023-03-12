@@ -5,6 +5,7 @@ import ErrorPage from "./routes/ErrorPage";
 
 import App from "./App";
 import AboutPage from "./routes/AboutPage";
+import PokemonLibrary from "./routes/PokemonLibrary";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "About",
     element: <AboutPage />,
+  },
+  {
+    path: "The-Pokemon-Library",
+    element: <PokemonLibrary />,
   },
 ]);
 
