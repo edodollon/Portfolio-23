@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { InView } from "react-intersection-observer";
 
@@ -17,32 +18,41 @@ export default function ProjectsGrid() {
       <div id="section-gap"></div>
       <section className="section-portfolio">
         <InView>
-          <div
-            ref={firstRef}
-            className={`project-card ${fInView && "show"}`}
-            id="first-card"
-          >
-            <section className="card-info">
-              <p>The Pokemon Library</p>
-              <p>Status: Completed</p>
-            </section>
-          </div>
+          <Link to={"The-Pokemon-Library"}>
+            <div
+              ref={firstRef}
+              className={`project-card ${fInView && "show"}`}
+              id="first-card"
+            >
+              <section className="card-info">
+                <p>The Pokemon Library</p>
+                <p>Status: Completed</p>
+              </section>
+            </div>
+          </Link>
         </InView>
         <InView>
-          <div ref={secondRef} className={`project-card ${sInView && "show"}`}>
-            <section className="card-info">
-              <p>StoreMe</p>
-              <p>Status: Completed</p>
-            </section>
-          </div>
+          <Link to={"Storage-App"}>
+            <div
+              ref={secondRef}
+              className={`project-card ${sInView && "show"}`}
+            >
+              <section className="card-info">
+                <p>StoreMe</p>
+                <p>Status: Completed</p>
+              </section>
+            </div>
+          </Link>
         </InView>
         <InView>
-          <div ref={thirdRef} className={`project-card ${tInView && "show"}`}>
-            <section className="card-info">
-              <p>Portfolio 2023</p>
-              <p>Status: In Progess</p>
-            </section>
-          </div>
+          <Link to={"Clyde-Portfolio"}>
+            <div ref={thirdRef} className={`project-card ${tInView && "show"}`}>
+              <section className="card-info">
+                <p>Portfolio 2023</p>
+                <p>Status: In Progess</p>
+              </section>
+            </div>
+          </Link>
         </InView>
       </section>
     </>
