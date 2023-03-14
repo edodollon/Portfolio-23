@@ -13,7 +13,7 @@ export default function PokemonPage() {
             <p>2022</p>
           </div>
           <section className="project-info-section">
-            <h1 className="project-heading">Project Heading</h1>
+            <h1 className="project-heading">The Pokemon Library</h1>
             <div className="project-description-wrapper">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
