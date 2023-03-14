@@ -1,0 +1,17 @@
+.nav-wrapper {
+  margin-top: 1rem;
+
+  .nav-items-wrapper {
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .nav-button {
+      background-color: #6a6666;
+      border-radius: 100px;
+      text-align: center;
+      padding: 8px 16px;
+    }
+  }
+}
