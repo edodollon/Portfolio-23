@@ -1,7 +1,11 @@
 // main project styling
 .image-container {
-  height: 375px;
+  height: 51vh;
   width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    height: 75vh;
+  }
 }
 
 .project-info-header {
@@ -13,11 +17,39 @@
 .project-content-wrapper {
   padding: 1rem;
 
+  @media only screen and (min-width: 1024px) {
+    padding: 2rem;
+  }
+
+  .project-info-section {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
   .project-heading {
     font-size: 28px;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 1rem;
+      font-size: 36px;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 3.125rem;
+    }
   }
 
   .project-description-wrapper {
     font-size: 20px;
+
+    @media only screen and (min-width: 768px) {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 24px;
+    }
   }
 }
