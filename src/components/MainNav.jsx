@@ -3,11 +3,20 @@ import { Link } from "react-router-dom";
 import "../styles/mainNav.scss";
 
 export default function MainNav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <nav className="nav-wrapper">
       <div className="nav-items-wrapper">
+        <Link className="nav-button" onClick={handleClick}>
+          {isOpen ? "Menu" : "x"}
+        </Link>
         <Link to={"/"} className="nav-button">
-          Home
+          Projects
         </Link>
         <Link to={"../About"} className="nav-button">
           About
