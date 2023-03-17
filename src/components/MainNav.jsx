@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/mainNav.scss";
 
 export default function MainNav() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleClick = () => {
     setIsOpen((prev) => !prev);
