@@ -12,7 +12,12 @@ export default function MainNav() {
   return (
     <nav className="nav-wrapper">
       <div className="nav-items-wrapper">
-        <Link className="nav-button" onClick={handleClick}>
+        <Link
+          className={`nav-button ${
+            isOpen ? "main-nav-open" : "main-nav-closed"
+          }`}
+          onClick={handleClick}
+        >
           {isOpen ? "Menu" : "x"}
         </Link>
         <Link to={"/"} className="nav-button">

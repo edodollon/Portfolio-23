@@ -11,8 +11,38 @@
     .nav-button {
       background-color: #6a6666;
       border-radius: 100px;
+      display: inline-block;
       text-align: center;
       padding: 8px 16px;
     }
+  }
+}
+
+// menu animation
+.main-nav-open {
+  width: 42px;
+  animation: opens 1s forwards;
+}
+
+@keyframes opens {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+.main-nav-closed {
+  width: 60px;
+  animation: closes 1s forwards;
+}
+
+@keyframes closes {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 20px;
   }
 }
