@@ -20,13 +20,28 @@ export default function MainNav() {
         >
           {isOpen ? "Menu" : "x"}
         </Link>
-        <Link to={"/"} className="nav-button">
+        <Link
+          to={"/"}
+          className={`nav-button ${
+            isOpen ? "main-nav-first closed-f" : "main-nav-first opened"
+          }`}
+        >
           Projects
         </Link>
-        <Link to={"../About"} className="nav-button">
+        <Link
+          to={"../About"}
+          className={`nav-button ${
+            isOpen ? "main-nav-second closed-s" : "main-nav-second opened"
+          }`}
+        >
           About
         </Link>
-        <Link to={"../Contact"} className="nav-button">
+        <Link
+          to={"../Contact"}
+          className={`nav-button ${
+            isOpen ? "main-nav-third closed-t" : "main-nav-third opened"
+          }`}
+        >
           Contact
         </Link>
       </div>
