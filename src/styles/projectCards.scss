@@ -6,11 +6,16 @@
 
 .section-portfolio {
   display: grid;
+  font-family: "Inter", sans-serif;
   justify-content: center;
   row-gap: 7rem;
   position: relative;
-  padding-bottom: 7rem;
+  padding: 0 1rem 7rem;
   z-index: 2;
+
+  a {
+    text-decoration: none;
+  }
 
   a:hover {
     cursor: pointer;
@@ -23,7 +28,17 @@
 }
 
 .project-card {
-  background-color: burlywood;
-  height: 18rem;
-  width: 18rem;
+  width: 100%;
+
+  .img-container {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+  }
 }

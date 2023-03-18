@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { InView } from "react-intersection-observer";
 
+import pkmnSmall from "../assets/mobile-graphic pokemon.png";
+import strgSmall from "../assets/mobile-graphic storage.png";
+import portSmall from "../assets/mobile-graphic portfolio.png";
+
 import "../styles/projectCards.scss";
 
 export default function ProjectsGrid() {
@@ -24,9 +28,12 @@ export default function ProjectsGrid() {
               className={`project-card ${fInView && "show"}`}
               id="first-card"
             >
+              <div className="img-container">
+                <img src={pkmnSmall} alt="" />
+              </div>
               <section className="card-info">
                 <p>The Pokemon Library</p>
-                <p>Status: Completed</p>
+                <p>Completed</p>
               </section>
             </div>
           </Link>
@@ -37,9 +44,12 @@ export default function ProjectsGrid() {
               ref={secondRef}
               className={`project-card ${sInView && "show"}`}
             >
+              <div className="img-container">
+                <img src={strgSmall} alt="" />
+              </div>
               <section className="card-info">
                 <p>StoreMe</p>
-                <p>Status: Completed</p>
+                <p>Completed</p>
               </section>
             </div>
           </Link>
@@ -47,9 +57,12 @@ export default function ProjectsGrid() {
         <InView>
           <Link to={"Clyde-Portfolio"}>
             <div ref={thirdRef} className={`project-card ${tInView && "show"}`}>
+              <div className="img-container">
+                <img src={portSmall} alt="" />
+              </div>
               <section className="card-info">
                 <p>Portfolio 2023</p>
-                <p>Status: In Progess</p>
+                <p>In Progess</p>
               </section>
             </div>
           </Link>
