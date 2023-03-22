@@ -67,6 +67,19 @@ export default function ProjectsGrid() {
             </div>
           </Link>
         </InView>
+        <InView>
+          <Link to={"Clyde-Portfolio"}>
+            <div ref={thirdRef} className={`project-card ${tInView && "show"}`}>
+              <div className="img-container">
+                <img src={portSmall} alt="" />
+              </div>
+              <section className="card-info">
+                <p>Portfolio 2023</p>
+                <p>In Progess</p>
+              </section>
+            </div>
+          </Link>
+        </InView>
       </section>
     </>
   );

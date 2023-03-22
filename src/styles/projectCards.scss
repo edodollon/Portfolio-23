@@ -20,12 +20,25 @@
   a:hover {
     cursor: pointer;
   }
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+
+    & > div {
+      padding: 0 1.5rem;
+    }
+
+    & > div:nth-child(even) {
+      margin-top: 50%;
+    }
+  }
 }
 
 // temporary
-.show {
-  border: 2px solid red;
-}
+// .show {
+//   border: 2px solid red;
+// }
 
 .project-card {
   width: 100%;
@@ -38,7 +51,13 @@
   }
 
   .card-info {
+    color: #000000;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
+    p:first-child {
+      font-size: 1.25rem;
+    }
   }
 }
